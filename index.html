@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laura | Asistente virtual informativo CFE</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      color: #233044;
+    }
+
+    header {
+      background: #07569b;
+      color: white;
+      padding: 22px 8%;
+    }
+
+    header h1 { margin: 0; font-size: 25px; }
+
+    main {
+      max-width: 900px;
+      margin: 65px auto;
+      padding: 35px;
+      text-align: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 25px rgba(0,0,0,.07);
+    }
+
+    .avatar {
+      width: 95px;
+      height: 95px;
+      margin: auto;
+      border-radius: 50%;
+      background: #dceeff;
+      color: #07569b;
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+    }
+
+    h2 { color: #07569b; }
+
+    p {
+      line-height: 1.7;
+      color: #536174;
+    }
+
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 25px 0;
+    }
+
+    .topics span {
+      background: #eaf3fb;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #697586;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Asistente virtual informativo CFE</h1>
+  </header>
+
+  <main>
+    <div class="avatar">🎙️</div>
+
+    <h2>Hola, soy Laura</h2>
+
+    <p>
+      Soy una asistente virtual informativa con inteligencia artificial.
+      Estoy aquí para orientarte sobre servicios y temas relacionados
+      con el suministro de energía eléctrica.
+    </p>
+
+    <div class="topics">
+      <span>Recibos y facturación</span>
+      <span>Pagos y adeudos</span>
+      <span>Fallas eléctricas</span>
+      <span>Contratación</span>
+      <span>Medidores</span>
+      <span>Reconexión</span>
+    </div>
+
+    <p>
+      Puedes conversar conmigo por voz o escribir tus preguntas
+      utilizando el asistente que aparece en esta página.
+    </p>
+  </main>
+
+  <footer>
+    Prueba de concepto (POC). Asistente experimental independiente.
+    No constituye un canal oficial de atención de CFE.
+  </footer>
+
+  <!-- Widget de ElevenLabs -->
+  <elevenlabs-convai agent-id="agent_6101m70pjkg3evva092psmqpsvjf"></elevenlabs-convai>
+  <script
+    src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+    async
+    type="text/javascript">
+  </script>
+
+</body>
+</html>
